@@ -1,3 +1,9 @@
+
+<?php
+     include("variables.php");
+     include("menuSolving.php");
+?>
+
 <div class="menu">
     <div class="container c1">
           <div class="item i1">
@@ -8,79 +14,41 @@
           </div>
     </div>
     <div class="container c2">
-      
+
+      <?php while($ligne=mysqli_fetch_row($results)):?>
+      <?php 
+          $nomProduit=$ligne[0];
+          $prix=$ligne[1];
+          $image=$ligne[2];
+          $description=$ligne[3];
+      ?>
       <div class="bloc b1">
             <div class="txt">
-                 <p>New balance  ML574</p>
-                 <span>98.09e</span>
+                 <p> <?php  echo strip_tags($nomProduit)?></p>
+                 <span><?php echo strip_tags($prix)?>$</span>
             </div>
             <div class="img-produit">
-                <img src="img/chauss5.jpg" alt="">
+                <img src="<?php echo $image?>" alt="">
             </div>
         </div> 
-        <div class="bloc b2">
-            <div class="txt">
-                 <p>New balance ML574</p>
-                 <span>98.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss8.jpg" alt="">
-            </div>
-        </div>
-         <div class="bloc b3">
-            <div class="txt">
-                 <p>New balance ML574</p>
-                 <span>10.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss5.jpg" alt="">
-            </div>
-        </div>
-         <div class="bloc b4">
-            <div class="txt">
-                 <p>New  boomrem ML574</p>
-                 <span>13.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss6.jpg" alt="">
-            </div>
-        </div>
-          <div class="bloc b5">
-            <div class="txt">
-                 <p>New balance  ML574</p>
-                 <span>98.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss5.jpg" alt="">
-            </div>
-        </div> 
-        <div class="bloc b6">
-            <div class="txt">
-                 <p>New balance ML574</p>
-                 <span>98.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss8.jpg" alt="">
-            </div>
-        </div>
-         <div class="bloc b7">
-            <div class="txt">
-                 <p>New balance ML574</p>
-                 <span>10.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss5.jpg" alt="">
-            </div>
-        </div>
-         <div class="bloc b8">
-            <div class="txt">
-                 <p>New  boomrem ML574</p>
-                 <span>13.09e</span>
-            </div>
-            <div class="img-produit">
-                <img src="img/chauss6.jpg" alt="">
-            </div>
-        </div>
-
+        <?php endwhile; ?>
+<div class="individual" >
+    <div class="produit">
+           <img src="<?php echo $image ?>" alt="">             
+     </div>
+      <div class="details">
+              <div class="taille1">
+                 <?php  echo strip_tags($nomProduit)?>
+                  <span><?php echo strip_tags($prix)?>$</span>
+              </div>
+              <div class="taille2">
+                     <hr>
+                    <p><?php echo strip_tags($description)?></p>
+              </div>
+              <div class="taille3">
+                     <a href=""><i></i>AJOUTER</a>
+              </div>
+         </div>
+      </div>
     </div>
 </div>

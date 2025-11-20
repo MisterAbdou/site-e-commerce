@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <link rel="stylesheet" href="css/formulaire.css">
 </head>
 <body>
       <div class="nav-bare">
         <div class="nav-haut">
             <div class="logo">
-                 <a href=""><img src="img/images.png" alt=""></a>
+                 <a href="#"><img src="img/images.png" alt=""></a>
             </div>
             <div class="panier">
-                   <a href=""> Mon espace</a>
+                   <a href="formulaire.php">mon espace</a>
                    <a href=""> mon panier</a>
             </div>
         </div>
         <div class="nav-bas">
             <ul class="nav-list">
-                <li><a href="">NOUVEAUTES</a></li>
-                <li><a href="">========</a></li>
-                <li><a href="">VETEMENTS</a></li>
-                <li><a href="">ACCESSOIRES</a></li>
-                <li><a href="">FEMME</a></li>
-                <li><a href="">ENFANT</a></li>
-                <li><a href="">SOLDES</a></li>
-                <li><a href="">MARQUES</a></li>
-                <li><a href="">BLOCS</a></li>
+                <li><a href="" class="btn" value="C00">NOUVEAUTES</a></li>
+                <li><a href="" class="btn" value="C01" >CHAUSSURES</a></li>
+                <li><a href="" class="btn"  value="C03">VETEMENTS</a></li>
+                <li><a href="" class="btn"  value="C04">ACCESSOIRES</a></li>
+                <li><a href="" class="btn" value="C05" >FEMME</a></li>
+                <li><a href="" class="btn"  value="C06" >ENFANT</a></li>
+                <li><a href="" class="btn"  value="C07" >SOLDES</a></li>
+                <li><a href="" class="btn"  value="C08" >MARQUES</a></li>
+                <li><a href="" class="btn"  value="C09" >BLOCS</a></li>
             </ul>
         </div>
       </div>
-       <?php  include("menu.php") ?>
-       <?php include("footer.php") ?>
+  <script src="js/index.js"></script>
+    <script src="js/connexion.js"></script>
+
 </body>
 </html>
