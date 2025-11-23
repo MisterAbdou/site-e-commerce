@@ -4,7 +4,7 @@
      include("menuSolving.php");
 ?>
 
-<div class="menu">
+<div class="menu" >
     <div class="container c1">
           <div class="item i1">
               <!-- <img src="img/chauss0.jpg" alt="">     -->
@@ -13,7 +13,7 @@
              <!-- <img src="img/chauss7.jpg" alt=""> -->
           </div>
     </div>
-    <div class="container c2">
+    <div class="container c2" id="#">
 
       <?php while($ligne=mysqli_fetch_row($results)):?>
       <?php 
@@ -32,13 +32,13 @@
             </div>
         </div> 
         <?php endwhile; ?>
-<div class="individual" >
+<div class="individual">
     <div class="produit">
            <img src="<?php echo $image ?>" alt="">             
      </div>
       <div class="details">
               <div class="taille1">
-                 <?php  echo strip_tags($nomProduit)?>
+                  <p> <?php  echo strip_tags($nomProduit)?></p>
                   <span><?php echo strip_tags($prix)?>$</span>
               </div>
               <div class="taille2">

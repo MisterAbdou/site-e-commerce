@@ -20,25 +20,25 @@ CREATE TABLE Produits(
     CONSTRAINT FK FOREIGN KEY (idCategorie) REFERENCES Categories(idCategorie) ON DELETE CASCADE
 );
 
- INSERT INTO  Produits VALUES ('','NEW BALANCE ML574', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
+ INSERT INTO  Produits VALUES ('','chemise', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationt, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?
-Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',45.6,'img/chauss6.jpg','C01');
+Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',454.6,'img/vet7.jpg','C02');
 
- INSERT INTO  Produits VALUES ('','NIKE', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
+ INSERT INTO  Produits VALUES ('','chemise', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationem nam, id impedit, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?
-Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',36.5,'img/chauss10.jpg','C01');
+Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',346.5,'img/vet5.jpg','C02');
 
- INSERT INTO  Produits VALUES ('','NEW NIKE', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
+ INSERT INTO  Produits VALUES ('','lacoste', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationem nam, id impedit, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?
-Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',15.75,'img/chauss5.jpg','C01');
+Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',215.75,'img/vet4.jpg','C02');
 
- INSERT INTO  Produits VALUES ('','NEW  NIKE 74', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
+ INSERT INTO  Produits VALUES ('','lacoste', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationem nam, id impedit, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?
-Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',66.75,'img/chauss2.jpg','C01');
+Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',66.75,'img/vet3.jpg','C02');
 
- INSERT INTO  Produits VALUES ('P05','NEW BALANCE ML574', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
+ INSERT INTO  Produits VALUES ('','NEW BALANCE ML574', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationem nam, id impedit, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?
-Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',976.75,'img/chauss7.jpg','C01');
+Assumenda neque fugiat expedita fuga perspiciatis temporibus voluptatibus exercitationem iste eveniet cupiditate. Tempore nesciunt nobis ducimus ad et placeat.',976.75,'img/vet7.jpg','C02');
 
  INSERT INTO  Produits VALUES ('P06','NEW BALANCE ML574', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at error ad, necessitatibus possimus dignissimos accusantium, molestias quod quas repellendus nostrum id odio! Nihil beatae tempore alias veritatis doloremque sit.
 Debitis illo, exercitationem nam, id impedit, doloremque vitae reprehenderit saepe modi ex doloribus minima amet accusantium quidem alias quibusdam dignissimos tenetur. Voluptatibus quia quasi quis ducimus, aliquam ratione dignissimos rerum?

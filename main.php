@@ -4,3 +4,6 @@
      include("menu.php");
      include("footer.php");
 ?>
+<script src="js/menu.js"></script>
+<script src="js/index.js"></script>
+ <script src="js/connexion.js"></script>
