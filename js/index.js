@@ -1,35 +1,30 @@
 
-const bouton = document.querySelectorAll(".btn");
 const scrollhaut = document.querySelector(".nav-haut");
+const bare=document.querySelectorAll(".btn")
 const scrollList = document.querySelector(".nav-list");
 const navbare = document.querySelector(".nav-bare");
+const navbas = document.querySelector(".nav-bas");
 
+const  bare_menu=document.getElementById("menu-id");
+
+ for(let i=0; i < bare.length; i++){
+        bare[i].addEventListener('cick',(e)=>{
+              e.preventDefault();
+              bare[i].classList.add("active"); 
+        });
+ }
 document.addEventListener("scroll", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
-    if (window.scrollY > 60) {
-        navbare.classList.remove("sticky");
-        navbare.style.backgroundColor = "#e7e6e6ff";
-        scrollList.style.backgroundColor = "#0b0b0bff";
-    } else {
+    if (window.scrollY > 80) {
         navbare.classList.add("sticky");
+        scrollhaut.style.backgroundColor = "#ffff";
+        navbas.style.backgroundColor = "#7b7a7aff";
+    } else {
+        navbare.classList.remove("sticky");
         navbare.style.backgroundColor = "transparent";
-        scrollList.style.backgroundColor = "rgba(0,0,0,0.5)";
+        navbas.style.backgroundColor = "rgba(0,0,0,0.5)";
     }
      navbare.style.zIndex=3;
 });
-
-let id;
-let b;
-for(let i=0; i < bouton.length; i++){
-    bouton[i].addEventListener('click',(e)=>{
-        //  e.preventDefault();
-
-         // Enlever la classe active de tous les boutons
-          bouton.forEach(btn => btn.classList.remove("active"));
-          bouton[i].classList.add("active");
-         id=bouton[i].getAttribute("value");
-         window.location.href="main.php?id="+id;
-    })
-}
 

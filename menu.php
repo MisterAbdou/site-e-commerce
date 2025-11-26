@@ -1,28 +1,28 @@
 
 <?php
      include("variables.php");
-     include("menuSolving.php");
+     include("function.php");
 ?>
 
-<div class="menu" >
-    <div class="container c1">
+<div class="menu" data-aos="fade-up" >
+    <div class="container c1" data-aos="fade-down-right">
           <div class="item i1">
-              <!-- <img src="img/chauss0.jpg" alt="">     -->
+              <img src="img/chauss0.jpg" alt="">    
           </div>
-          <div class="item i2">
-             <!-- <img src="img/chauss7.jpg" alt=""> -->
+          <div class="item i2" data-aos="fade-down-left">
+             <img src="img/chauss7.jpg" alt="">
           </div>
     </div>
-    <div class="container c2" id="#">
-
-      <?php while($ligne=mysqli_fetch_row($results)):?>
+    <div class="container c2" id="menu-id">
+      <?php if($resultat=interrogerMenu()) :?>
+      <?php while($ligne=mysqli_fetch_row($resultat)):?>
       <?php 
           $nomProduit=$ligne[0];
           $prix=$ligne[1];
           $image=$ligne[2];
           $description=$ligne[3];
       ?>
-      <div class="bloc b1">
+      <div class="bloc b1" data-aos="zoom-in-right">
             <div class="txt">
                  <p> <?php  echo strip_tags($nomProduit)?></p>
                  <span><?php echo strip_tags($prix)?>$</span>
@@ -31,8 +31,9 @@
                 <img src="<?php echo $image?>" alt="">
             </div>
         </div> 
-        <?php endwhile; ?>
-<div class="individual">
+        <?php endwhile; endif;  ?>
+     
+  <div class="individual" data-aos="zoom-out-left">
     <div class="produit">
            <img src="<?php echo $image ?>" alt="">             
      </div>
@@ -52,3 +53,4 @@
       </div>
     </div>
 </div>
+  <?php   closeDataBase(); ?>

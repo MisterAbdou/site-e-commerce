@@ -12,5 +12,7 @@
       $email="inconnu" ;
       $motDePasse="inconnu";
       $dateNaiss=0;
-
+        
+       $compteur=0;
+       $categorie;
 ?>

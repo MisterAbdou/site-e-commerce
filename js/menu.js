@@ -3,7 +3,6 @@ const getInd=document.querySelector(".individual");
 const getProd=document.querySelector(".c2");
 
 
-
 getInd.classList.add("masquer");
 getProd.classList.add("fixer");
    for(let i=0;i< getBloc.length;i++){

@@ -1,3 +1,10 @@
+ *{
+       list-style: none;
+       text-decoration: none;
+       font-size: 16px;
+       font-weight: 800;
+       scroll-behavior: smooth;
+ }
 
 body{
      display:block;
@@ -10,15 +17,20 @@ body{
        position:fixed;
        top: 0;
        right: 0;
-       display: block;
+       display:flex;
+       flex-direction: column;
+       align-content:center;
        width: 100%;
 }
 .nav-haut{
     width: 100%;
-    margin-top: 1rem;
+    padding: 1rem 0rem;
     display: flex;
     justify-content:space-around;
     align-content: center;
+}
+.nav-bas{
+      background-color:rgba(0,0,0,.5);
 }
 .logo>a>img{
       box-sizing: border-box;
@@ -52,14 +64,18 @@ body{
      align-content: center;
      justify-content: center;
       gap: 2rem;
-      padding: 10px 6px 0px 6px;
-      background-color:rgba(0,0,0,.5);
-      height:25px;
 }
  .nav-list >li>a {
       color:white;
       font-weight: 800;
- }
+      padding-bottom:6px;
+ }li:hover{
+       
+       text-decoration: underline;
+       text-decoration-style: solid;
+       text-decoration-color:black;
+}
+
 .active{
        background-color: rgb(18, 18, 18);
        border-radius: 2px;
@@ -68,6 +84,6 @@ body{
 
 .sticky{
       background-color:rgba(0,0,0,.5);
-
+      scroll-behavior: smooth;
 }
      
