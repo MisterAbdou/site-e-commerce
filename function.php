@@ -42,43 +42,5 @@
            return $reponse;
        }
 
-       // fonction permettant d'afficher le menu
-    //     function interrogerMenu(){
-    //      $con=openDataBase();
-             
-    //           if(isset($_GET['id']))
-    //           $categorie=$_GET['id'];
-      
-    //          // requete pour interroger la base
-    //          $requetes="SELECT nomProduit,prix,imageProduit,descriptionProduit
-    //          FROM `Produits`
-    //           where `idCategorie` ='$categorie'
-    //           LIMIT 8  ";
-    //         // recuperation resultats(tableau)
-    //           $results =mysqli_query($con,$requetes);
-    //           return $results;
-    //  }   // fonction permettant de verifier la connexion dans la base de donnees
-  //  function openDataBase(){
-  //      $connexion=mysqli_connect("localhost","root","");
-  //       if( $connexion == false){
-  //                   echo"<script> alert('connexion impossible')</script>";
-              
-  //       }
-  //       $dataBase=mysqli_select_db($connexion,"e-commerce");
-  //       if(!$dataBase){
-  //                   echo"<script> alert('base de donnee non trouve')</script>";
-              
-  //       }
-         
-  //       return $connexion;
-  //  }
-  //   function closeDataBase(){
-  //        if( mysqli_close(openDataBase()) == false){
-  //                   echo"<script> alert('impossible de se connecter')</script>";
-             
-  //        }
-  //  }
 
-     
-  
 ?>
