@@ -1,7 +1,6 @@
 
 <?php
      include("variables.php");
-     include("function.php");
 ?>
 
 <div class="menu" data-aos="fade-up" >
@@ -14,13 +13,14 @@
           </div>
     </div>
     <div class="container c2" id="menu-id">
-      <?php if($resultat=interrogerMenu()) :?>
-      <?php while($ligne=mysqli_fetch_row($resultat)):?>
+
+      <?php  foreach( $tabProduit as $ligne ):?>
       <?php 
-          $nomProduit=$ligne[0];
-          $prix=$ligne[1];
-          $image=$ligne[2];
-          $description=$ligne[3];
+        //    nomProduit,descriptionProduit,prix,imageProduit,idCategorie
+          $nomProduit=$ligne['nomProduit'];
+          $prix=$ligne['prix'];
+          $image=$ligne['imageProduit'];
+          $description=$ligne['descriptionProduit'];
       ?>
       <div class="bloc b1" data-aos="zoom-in-right">
             <div class="txt">
@@ -31,7 +31,7 @@
                 <img src="<?php echo $image?>" alt="">
             </div>
         </div> 
-        <?php endwhile; endif;  ?>
+        <?php endforeach; ?>
      
   <div class="individual" data-aos="zoom-out-left">
     <div class="produit">
@@ -53,4 +53,4 @@
       </div>
     </div>
 </div>
-  <?php   closeDataBase(); ?>
+<?php ?> 
